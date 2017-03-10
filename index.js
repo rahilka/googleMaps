@@ -22,5 +22,14 @@ function initMap() {
         alert('Finished dragging');
     });
 
+    var marker = new google.maps.Marker({
+
+        position: {
+            lat: 41.997346,
+            lng: 21.427996
+        },
+        map: map
+    });
+
 
 }
