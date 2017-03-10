@@ -13,4 +13,14 @@ function initMap() {
 
     map.setZoom(18);
 
+    google.maps.event.addListener(map, 'click', function(e) {
+        alert('click');
+        console.log(e);
+    });
+
+    google.maps.event.addListener(map, 'dragend', function() {
+        alert('Finished dragging');
+    });
+
+
 }
